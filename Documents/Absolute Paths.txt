@@ -1,0 +1,7 @@
+settings.py:
+
+DATABASES -> NAME
+
+STATICFIELS_DIRS
+
+TEMPLATE_DIRS

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+<head>
+<link rel="stylesheet" type="text/css" href="/static/css/styles.css" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>NFL Prediction App</title>
+</head>
+<body>
+
+<div id="header">
+  <h1 id="headerText" class="center">NFL Prediction App</h1>
+</div>
+
+<div id="nav">
+   <p><a href="">Help</a> | <a href="">About</a></p>
+</div>
+
+<div id="content">
+<p>Test - list of games in database:</p>
+{% if game_list %}
+    <ul>
+    {% for game in game_list %}
+        <li>{{ game }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No games are available.</p>
+{% endif %}
+<h2>Search for outcomes based on game criteria:</h2>
+<form id="search" name="search" action="results/" method="post">
+{% csrf_token %}
+  <table id="searchTable">
+    <tr>
+	  <td><input type="submit" value="Search" /></td>
+	</tr>
+  </table>
+</form>
+</div>
+
+</body>
+</html>

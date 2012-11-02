@@ -1,0 +1,26 @@
+body { background-color: #CCCCCC; }
+
+#headerText { color: #CC0000; }
+
+#nav { margin: auto;
+	   width: 400px;
+	   text-align: center; }
+	   
+#nav p { font-size: 1.5em; }
+
+#content { width: 800px;
+		   height: 100%;
+		   margin: auto;
+		   border: 1px solid #0000CC;
+		   padding: 10px; }
+
+.center { text-align: center; }
+
+h2 { color: #0000CC; }
+h2#resultHeading { margin-left: 300px; }
+
+#searchTable { margin: auto; }
+
+#resultsTable { margin: auto; }
+
+#resultsTable td { padding: 5px 15px; }

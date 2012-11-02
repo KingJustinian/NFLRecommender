@@ -1,0 +1,7 @@
+1) Change date to be: YYYY-MM-DD
+2) Add primary key field
+3) Add model field
+
+
+
+2) Remove % sign from both third down percentage columns
